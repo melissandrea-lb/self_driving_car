@@ -17,10 +17,12 @@ class Sensor{
             );
         }
     }
-    #getReading(ray, roadBorders){
+
+    #getReading(ray,roadBorders){
         let touches=[];
+
         for(let i=0;i<roadBorders.length;i++){
-            const touch=getIntersecion(
+            const touch=getIntersection(
                 ray[0],
                 ray[1],
                 roadBorders[i][0],
@@ -30,6 +32,7 @@ class Sensor{
                 touches.push(touch);
             }
         }
+
         if(touches.length==0){
             return null;
         }else{
