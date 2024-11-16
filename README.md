@@ -1,4 +1,4 @@
-"# self_driving_car" 
+# self_driving_car
 
 This project implements a self-driving car simulation by coding every component (driving mechanics, the environment, sensors, detect collisions, and that the car control itself using a neural network).
 
